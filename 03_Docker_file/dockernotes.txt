@@ -1,0 +1,28 @@
+ 
+ docker build -t vite-test .       ............> -t stand for tagname
+
+dockr run  -d ...... detached mode behind start
+dockr run --name  mycontainer dockerimage
+dockr run  -v $(pwd):/app
+dockr run -it <image> /bin/sh sh   interactiv shell
+
+docker logs containername
+docker attach containernam
+docker stop
+docker start
+docker kill
+docker container prune   .... it delte delete all stop container
+docker cp container:/patch/to/file ./
+
+docker $(docker ps -q)   ..... it will stop the all running containernam
+
+
+ dcoker images
+ make a dockerignorefile and on their own line add node_modules
+docker run -p 5173:5173 vite-test
+
+ in the vite configuration
+   server: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
