@@ -1,0 +1,27 @@
+# Ignore node_modules (for Node.js projects)
+node_modules
+
+# Ignore logs
+*.log
+logs/
+
+Dockerfile
+.dockerignore
+
+
+# Ignore environment variables and secrets
+.env
+.env.*
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore Dockerignore itself
+.dockerignore
+
+# Ignore build directories
+dist/
+build/
+__pycache__/
+*.pyc
